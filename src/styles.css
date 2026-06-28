@@ -92,23 +92,37 @@ button {
 
 .emotion-picker {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .emotion-button {
   display: inline-grid;
-  width: 48px;
-  height: 48px;
+  width: 68px;
+  height: 76px;
   place-items: center;
+  align-content: center;
+  gap: 7px;
   border: 1px solid transparent;
   border-radius: 8px;
+  padding: 8px 6px;
 }
 
 .emotion-button:hover,
 .emotion-button:focus-visible {
   border-color: currentColor;
   outline: none;
+}
+
+.emotion-face {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.emotion-label {
+  color: rgba(17, 24, 39, 0.58);
+  font-size: 13px;
+  line-height: 1;
 }
 
 .diary-textarea {
@@ -142,11 +156,67 @@ button {
   gap: 16px;
 }
 
+.history-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .history h2 {
   margin: 0;
   color: rgba(17, 24, 39, 0.52);
   font-size: 14px;
   font-weight: 500;
+}
+
+.file-save-button {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: var(--surface);
+  color: rgba(17, 24, 39, 0.58);
+  font-size: 13px;
+}
+
+.file-save-button:hover,
+.file-save-button:focus-visible {
+  border-color: currentColor;
+  outline: none;
+}
+
+.file-location {
+  margin: -6px 0 0;
+  color: rgba(17, 24, 39, 0.38);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.history-range {
+  display: grid;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.history-range span {
+  color: rgba(17, 24, 39, 0.52);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.history-range input {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 11px 12px;
+  background: rgba(255, 255, 255, 0.54);
+  color: rgba(17, 24, 39, 0.68);
+  font: inherit;
+  outline: none;
+}
+
+.history-range input:focus {
+  border-color: currentColor;
 }
 
 .history ul {
@@ -185,6 +255,14 @@ button {
   display: grid;
   min-width: 0;
   gap: 5px;
+}
+
+.history-face {
+  display: grid;
+  min-width: 0;
+  place-items: center;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .history-item strong {
